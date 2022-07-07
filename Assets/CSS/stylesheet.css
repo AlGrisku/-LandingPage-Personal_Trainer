@@ -44,13 +44,14 @@ a
 
 #header .header
 {
-    background-image: url('/Assets/Media/Images/Pattern.png') ,linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
-    background-repeat: no-repeat;
-    background-position: center, center;
-    background-size: auto;
+    background-image: url('/Assets/Media/Images/Pattern-Desktop.png') ,linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20px 50px, center;
+    background-size: 900px 800px, auto;
     color: var(--white);
     padding-top: 140px;
     overflow: hidden;
+    position: relative;
 }
 
 #header .column-wrapper
@@ -158,7 +159,7 @@ a
     width: 100%;
     border: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
     letter-spacing: 3px;
 }
@@ -201,18 +202,45 @@ a
 
 #header .right-column .image-container
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 70%;
+    position: relative;
 }
 
-#header .right-column .image-container img::before
+#header .right-column .image-container img
+{
+    z-index: 10;
+}
+
+#header .right-column .image-container::before
 {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: var(--blue);
-    left: -50%;
-    top: 30%;
+    left: -40%;
+    top: 20%;
+}
+
+#header .right-column .image-container::after
+{
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 200%;
+    background-color: var(--blue);
+    right: -40%;
+    top: -15%;
+}
+
+#header .header-bottom-svg
+{
+    position: absolute;
+    bottom: -10%;
+    z-index: 10;
 }
 
 
@@ -223,6 +251,88 @@ a
 @media only screen and (min-width: 768px)
 {
 
+    /* Start Header Section Tablet */
+
+    #header .header
+    {
+        background-position: -10px 150px, center;
+        padding-top: 200px;
+        background-size: 1200px 900px, auto;
+    }
+
+    #header .column-wrapper .left-column
+    {
+        margin-bottom: 200px;
+    }
+
+    #header .left-column .content-wrapper h1
+    {
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+    }
+    
+    #header .left-column .content-wrapper .dividers
+    {
+        padding: 50px 0;
+    }
+    
+    #header .left-column .content-wrapper .dividers span::before
+    {
+        top: -20px;
+    }
+    
+    #header .left-column .content-wrapper .dividers span::after
+    {
+        bottom: -20px;
+    }
+
+    #header .left-column .content-wrapper p
+    {
+        font-size: 2rem;
+    }
+
+    #header .left-column .content-wrapper .email-form input[type=email]
+    {
+        font-size: 1.8rem;
+    }
+
+    #header .left-column .content-wrapper .email-form .submit
+    {
+        font-size: 1.8rem;
+    }
+
+    #header .right-column .image-container
+    {
+        width: 75%;
+        height: 900px;
+    }
+    
+    #header .right-column .image-container::before
+    {
+        top: 20%;
+    }
+    
+    #header .right-column .image-container::after
+    {
+        content: '';
+        position: absolute;
+        width: 85%;
+        height: 200%;
+        background-color: var(--blue);
+        right: -40%;
+        top: -10%;
+    }
+
+    #header .header-bottom-svg
+    {
+        position: absolute;
+        bottom: 0;
+        height: 300px;
+        z-index: 10;
+    }
+
+    /* End Header Section Tablet */
+
 }
 
 /* End Media Query for Tablet */
@@ -232,6 +342,120 @@ a
 
 @media only screen and (min-width: 1200px)
 {
+
+    /* Start Header Section Desktop */
+
+    #header .header
+    {
+        padding-top: 300px;
+        background-position: 0 100px, center;
+        background-size: cover, auto;
+    }
+
+    #header .column-wrapper
+    {
+        flex-direction: row;
+    }
+
+    #header .column-wrapper .left-column
+    {
+        align-items: flex-start;
+        width: 50%;
+        margin-right: 50px;
+    }
+
+    #header .left-column .content-wrapper
+    {
+        text-align: left;
+    }
+
+    #header .left-column .content-wrapper h1
+    {
+        font-size: 5rem;
+    }
+    
+    #header .left-column .content-wrapper .dividers
+    {
+        align-items: flex-start;
+        padding: 50px 0;
+    }
+    
+    #header .left-column .content-wrapper .dividers span
+    {
+        width: 40%;
+    }
+    
+    #header .left-column .content-wrapper .dividers span::before
+    {
+        top: -15px;
+        left: 50%;
+    }
+    
+    #header .left-column .content-wrapper .dividers span::after
+    {
+        bottom: -15px;
+        left: 80%;
+    }
+    
+    #header .left-column .content-wrapper p
+    {
+        font-size: 2rem;
+    }
+
+    #header .left-column .content-wrapper .email-form
+    {
+        flex-direction: row;
+        padding-top: 40px;
+    }
+    
+    #header .left-column .content-wrapper .email-form form
+    {
+        width: 70%;
+    }
+
+    #header .left-column .content-wrapper .email-form input[type=email]
+    {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 1.3rem;
+    }
+
+    #header .left-column .content-wrapper .email-form .submit
+    {
+        width: 30%;
+        font-size: 1.3rem;
+    }
+
+    #header .right-column
+    {
+        width: 50%;
+    }
+
+    #header .right-column .image-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    #header .right-column .image-container::before
+    {
+        width: 30%;
+        left: -20%;
+    }
+    
+    #header .right-column .image-container::after
+    {
+        width: 60%;
+    }
+
+    #header .header-bottom-svg
+    {
+        bottom: -5%;
+    }
+
+    /* End Header Section Desktop */
 
 }
 
