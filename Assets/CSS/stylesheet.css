@@ -373,6 +373,82 @@ a
 
 /* End About Section*/
 
+/* Start Services Section */
+
+#services .services
+{
+    position: relative;
+    overflow: hidden;
+}
+
+#services .services-top-svg
+{
+    position: absolute;
+    top: -120px;
+    width: 100%;
+    height: 300px;
+    transform: scaleY(1.5);
+}
+
+#services .section-name
+{
+    top: 10%;
+}
+
+#services .wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 260px;
+}
+
+#services .wrapper .three-columns
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    margin-bottom: 100px;
+}
+
+#services .wrapper .three-columns .column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    row-gap: 20px;
+    width: 100%;
+}
+
+#services .wrapper .three-columns .column .icon
+{
+    width: 100px;
+    height: 100px;
+}
+
+#services .wrapper .three-columns .column  h3
+{
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+
+#services .wrapper .three-columns .column  p
+{
+    font-size: 1.1rem;
+    text-align: center;
+    width: 85%;
+}
+
+/* End Services Section */
+
 /* Start Media Query for Tablet */
 
 @media only screen and (min-width: 768px)
