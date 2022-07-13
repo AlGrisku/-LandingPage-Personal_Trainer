@@ -674,7 +674,7 @@ a
     position: relative;
 }
 
-#testimonials .wrapper .testimonial-box .content-wrapper .text 
+#testimonials .wrapper .testimonial-box .content-wrapper .text
 {
     display: flex;
     flex-direction: column;
@@ -776,6 +776,147 @@ a
 }
 
 /* End Testimonials Section */
+
+/* Start Contact Section */
+
+#contact .contact
+{
+    background-color: var(--gradient1);
+    position: relative;
+}
+
+#contact .contact-top-svg
+{
+    position: absolute;
+    top: -100px;
+    width: 100%;
+}
+
+#contact .contact .wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 130px;
+    margin-bottom: 70px;
+}
+
+#contact .contact .wrapper .contact-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 30px;
+}
+
+#contact .contact .wrapper .contact-section .text-info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    row-gap: 40px;
+}
+
+#contact .contact .wrapper .contact-section .text-info h1
+{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+#contact .contact .wrapper .contact-section .text-info h1::before
+{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 70%;
+    background-color: var(--blue);
+    bottom: -10px;
+    left: -10px;
+}
+
+#contact .contact .wrapper .contact-section .text-info h1::after
+{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 70%;
+    background-color: var(--blue);
+    bottom: -20px;
+    right: -10px;
+}
+
+#contact .contact .wrapper .contact-section .text-info p
+{
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#contact .contact .wrapper .contact-section .form-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact .contact .wrapper .contact-section .form-wrapper form
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact .contact .wrapper .contact-section .form-wrapper form input[type=text]
+{
+    height: 80px;
+    width: 100%;
+    border-radius: 35px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+#contact .contact .wrapper .contact-section .form-wrapper form input[type=email]
+{
+    height: 80px;
+    width: 100%;
+    border-radius: 35px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+#contact .contact .wrapper .contact-section .form-wrapper form input[type=text]:focus,
+#contact .contact .wrapper .contact-section .form-wrapper form input[type=email]
+{
+    outline-color: var(--blue);
+}
+
+#contact .contact .wrapper .contact-section .form-wrapper form .submit
+{
+    display: block;
+    height: 80px;
+    width: 100%;
+    border-radius: 35px;
+    font-size: 1.6rem;
+    background-color: var(--blue);
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: 3px;
+}
+
+/* End Contact Section */
 
 /* Start Media Query for Tablet */
 
@@ -982,6 +1123,34 @@ a
     }
 
     /* End Prices Section Tablet */
+
+    /* Start Testimonials Section Tablet */
+
+    #testimonials .wrapper .testimonial-box
+    {
+        height: 450px;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper .text
+    {
+        padding-top: 0;
+        margin-bottom: 80px;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper .user
+    {
+        position: relative;
+        top: -40px;
+        right: 0;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper .user .image-wrapper
+    {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* End Testimonials Section Tablet */
 
 }
 
@@ -1267,6 +1436,85 @@ a
     }
 
     /* End Prices Section Desktop */
+
+    /* Start Testimonials Desktop */
+
+    #testimonials .testimonials .section-name
+    {
+        top: 15%;
+    }
+
+    #testimonials .wrapper
+    {
+        width: 70%;
+        margin-top: 350px;
+        row-gap: 40px;
+    }
+
+    #testimonials .wrapper .testimonial-box
+    {
+        height: 540px;
+    }
+
+    #testimonials .wrapper .testimonial-box .quotes-top
+    {
+        width: 100px;
+        height: 100px;
+        top: -52px;
+    }
+    
+    #testimonials .wrapper .testimonial-box .quotes-bottom
+    {
+        width: 100px;
+        height: 100px;
+        bottom: -52px;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper
+    {
+        flex-direction: row;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper .text
+    {
+        width: 70%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper .text::before
+    {
+        bottom: -20px;
+    }
+    
+    #testimonials .wrapper .testimonial-box .content-wrapper .text::after
+    {
+        bottom: -40px;
+        width: 40%;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper .user
+    {
+        position: relative;
+        top: 0;
+        left: 100px;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper .user .image-wrapper
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+    #testimonials .wrapper .testimonial-box .content-wrapper .user p
+    {
+        padding-left: 40px;
+        margin-top: 5px;
+    }
+
+    /* End Testimonials Desktop */
 
 }
 
