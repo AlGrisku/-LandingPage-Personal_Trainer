@@ -1,4 +1,8 @@
-/* Start Color Variables */
+/* 
+
+Start Color Variables 
+
+*/
 
 :root
 {
@@ -9,7 +13,11 @@
     --blue: #65FBD2;
 }
 
-/* End Color Variables */
+/* 
+
+End Color Variables 
+
+*/
 
 *
 {
@@ -86,14 +94,18 @@ a
     border: 2px solid var(--blue);
 }
 
-/* Start Header Section */
+/* 
+
+Start Header Section 
+
+*/
 
 #header .header
 {
     background-image: url('/Assets/Media/Images/Pattern-Desktop.png') ,linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
     background-repeat: no-repeat, no-repeat;
-    background-position: -20px 50px, center;
-    background-size: 900px 800px, auto;
+    background-position: -80px 50px, center;
+    background-size: 1000px 800px, auto;
     color: var(--white);
     padding-top: 140px;
     overflow: hidden;
@@ -289,9 +301,17 @@ a
     z-index: 10;
 }
 
-/* End Header Section */
+/* 
 
-/* Start About Section */
+End Header Section 
+
+*/
+
+/* 
+
+Start About Section 
+
+*/
 
 #about .about
 {
@@ -392,9 +412,17 @@ a
     height: auto;
 }
 
-/* End About Section*/
+/* 
 
-/* Start Services Section */
+End About Section
+
+*/
+
+/* 
+
+Start Services Section 
+
+*/
 
 #services .services
 {
@@ -469,9 +497,17 @@ a
     width: 85%;
 }
 
-/* End Services Section */
+/* 
 
-/* Start Prices Section */
+End Services Section 
+
+*/
+
+/* 
+
+Start Prices Section 
+
+*/
 
 #prices .prices
 {
@@ -601,9 +637,17 @@ a
     bottom: -2px;
 }
 
-/* End Prices Section */
+/* 
 
-/* Start Testimonials Section */
+End Prices Section 
+
+*/
+
+/* 
+
+Start Testimonials Section 
+
+*/
 
 #testimonials .testimonials
 {
@@ -775,14 +819,26 @@ a
     border-color: var(--blue);
 }
 
-/* End Testimonials Section */
+/* 
 
-/* Start Contact Section */
+End Testimonials Section 
+
+*/
+
+/* 
+
+Start Contact Section 
+
+*/
 
 #contact .contact
 {
     background-color: var(--gradient1);
     position: relative;
+    background-image: url('/Assets/Media/Images/Pattern-Desktop.png');
+    background-repeat: no-repeat;
+    background-position: -80px 50px;
+    background-size: 1000px 800px;
 }
 
 #contact .contact-top-svg
@@ -799,7 +855,7 @@ a
     justify-content: center;
     width: 80%;
     margin-top: 130px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 #contact .contact .wrapper .contact-section
@@ -885,6 +941,7 @@ a
     padding-left: 20px;
     font-size: 1.1rem;
     letter-spacing: 3px;
+    border-color: transparent;
 }
 
 #contact .contact .wrapper .contact-section .form-wrapper form input[type=email]
@@ -895,10 +952,11 @@ a
     padding-left: 20px;
     font-size: 1.1rem;
     letter-spacing: 3px;
+    border-color: transparent;
 }
 
 #contact .contact .wrapper .contact-section .form-wrapper form input[type=text]:focus,
-#contact .contact .wrapper .contact-section .form-wrapper form input[type=email]
+#contact .contact .wrapper .contact-section .form-wrapper form input[type=email]:focus
 {
     outline-color: var(--blue);
 }
@@ -914,16 +972,36 @@ a
     font-weight: 900;
     color: var(--white);
     letter-spacing: 3px;
+    border: 2px solid var(--gradient1);
 }
 
-/* End Contact Section */
+#contact .contact .wrapper .contact-section .form-wrapper form .submit:hover
+{
+    background-color: var(--white);
+    color: #000;
+    border: 2px solid var(--blue);
+}
 
-/* Start Media Query for Tablet */
+/* 
+
+End Contact Section 
+
+*/
+
+/* 
+
+Start Media Query for Tablet 
+
+*/
 
 @media only screen and (min-width: 768px)
 {
 
-    /* Start Header Section Tablet */
+    /* 
+    
+    Start Header Section Tablet 
+    
+    */
 
     #header .header
     {
@@ -1003,9 +1081,17 @@ a
         z-index: 10;
     }
 
-    /* End Header Section Tablet */
+    /* 
+    
+    End Header Section Tablet 
+    
+    */
 
-    /* Start About Section Tablet */
+    /* 
+    
+    Start About Section Tablet 
+    
+    */
 
     .section-name
     {
@@ -1052,9 +1138,17 @@ a
         width: 250px;
     }
 
-    /* End About Section Tablet */
+    /* 
+    
+    End About Section Tablet 
+    
+    */
 
-    /* Start Services Section Tablet */
+    /* 
+    
+    Start Services Section Tablet 
+    
+    */
 
     #services .section-name
     {
@@ -1097,9 +1191,17 @@ a
         width: 85%;
     }
 
-    /* End Services Section Tablet */
+    /* 
+    
+    End Services Section Tablet 
+    
+    */
 
-    /* Start Prices Section Tablet */
+    /* 
+    
+    Start Prices Section Tablet 
+    
+    */
 
     #prices .section-name
     {
@@ -1122,9 +1224,17 @@ a
         flex-basis: 46%;
     }
 
-    /* End Prices Section Tablet */
+    /* 
+    
+    End Prices Section Tablet 
+    
+    */
 
-    /* Start Testimonials Section Tablet */
+    /* 
+    
+    Start Testimonials Section Tablet 
+    
+    */
 
     #testimonials .wrapper .testimonial-box
     {
@@ -1150,19 +1260,84 @@ a
         height: 180px;
     }
 
-    /* End Testimonials Section Tablet */
+    /* 
+    
+    End Testimonials Section Tablet 
+    
+    */
+
+    /*
+    
+    Start Contact Section Tablet
+    
+    */
+
+    #contact .contact .wrapper
+    {
+        width: 70%;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    #contact .contact .wrapper .contact-section .text-info h1
+    {
+        font-size: 3.4rem;
+    }
+
+    #contact .contact .wrapper .contact-section .text-info p
+    {
+        font-size: 1.6rem;
+    }
+
+    #contact .contact .wrapper .contact-section .form-wrapper form
+    {
+        row-gap: 20px;
+    }
+
+    #contact .contact .wrapper .contact-section .form-wrapper form input[type=text]
+    {
+        font-size: 1.4rem;
+    }
+    
+    #contact .contact .wrapper .contact-section .form-wrapper form input[type=email]
+    {
+        font-size: 1.4rem;
+    }
+
+    #contact .contact .wrapper .contact-section .form-wrapper form .submit
+    {
+        font-size: 2rem;
+    }
+
+    /*
+    
+    End Contact Section Tablet
+    
+    */
 
 }
 
-/* End Media Query for Tablet */
+/* 
+
+End Media Query for Tablet 
+
+*/
 
 
-/* Start Media Query for Desktop */
+/* 
+
+Start Media Query for Desktop 
+
+*/
 
 @media only screen and (min-width: 1200px)
 {
 
-    /* Start Header Section Desktop */
+    /* 
+    
+    Start Header Section Desktop 
+    
+    */
 
     #header .header
     {
@@ -1275,9 +1450,17 @@ a
         left: -18%;
     }
 
-    /* End Header Section Desktop */
+    /* 
+    
+    End Header Section Desktop 
+    
+    */
 
-    /* Start About Section Desktop */
+    /* 
+    
+    Start About Section Desktop 
+    
+    */
 
     #about .content-wrapper
     {
@@ -1354,9 +1537,17 @@ a
         width: 300px;
     }
 
-    /* End About Section Desktop */
+    /* 
+    
+    End About Section Desktop 
+    
+    */
 
-    /* Start Services Section Desktop */
+    /* 
+    
+    Start Services Section Desktop 
+    
+    */
 
     #services .services-top-svg
     {
@@ -1390,9 +1581,17 @@ a
         transform: translateY(-40%);
     }
 
-    /* End Services Section Desktop */
+    /* 
+    
+    End Services Section Desktop 
+    
+    */
 
-    /* Start Prices Section Desktop */
+    /* 
+    
+    Start Prices Section Desktop 
+    
+    */
 
     #prices .wrapper .price-pack-columns .price-column
     {
@@ -1435,9 +1634,17 @@ a
         margin-top: 10px;
     }
 
-    /* End Prices Section Desktop */
+    /* 
+    
+    End Prices Section Desktop 
+    
+    */
 
-    /* Start Testimonials Desktop */
+    /* 
+    
+    Start Testimonials Desktop 
+    
+    */
 
     #testimonials .testimonials .section-name
     {
@@ -1514,8 +1721,16 @@ a
         margin-top: 5px;
     }
 
-    /* End Testimonials Desktop */
+    /* 
+    
+    End Testimonials Desktop 
+    
+    */
 
 }
 
-/* End Media Query for Desktop */
+/* 
+
+End Media Query for Desktop 
+
+*/
