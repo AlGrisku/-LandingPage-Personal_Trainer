@@ -25,6 +25,7 @@ End Color Variables
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
+    scroll-behavior: smooth;
 }
 
 img
@@ -93,6 +94,178 @@ a
     color: #000;
     border: 2px solid var(--blue);
 }
+
+/*
+
+Start Navigation Bar
+
+*/
+
+#nav
+{
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+#nav .nav
+{
+    height: 15vh;
+    transition: 0.3s ease;
+}
+
+#nav .nav-bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+#nav .nav-bar .logo
+{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+#nav .nav-bar .logo h1 a
+{
+    color: var(--white);
+    transition: 0.3s ease;
+}
+#nav .nav-bar .logo h1 a span
+{
+    color: var(--blue);
+    transition: 0.3s ease;
+}
+#nav .nav-bar .logo h1 a:hover
+{
+    color: var(--blue);
+}
+#nav .nav-bar .logo h1 a:hover span
+{
+    color: var(--white);
+}
+
+#nav .nav-bar .nav-list ul
+{
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--gradient1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s ease left;
+}
+
+#nav .nav-bar .nav-list ul.active
+{
+    left: 0;
+}
+
+#nav .nav-bar .nav-list ul a
+{
+    display: block;
+    width: 100vw;
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 20px 30px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    border-top: 2px solid var(--white);
+    transition: .3s ease-in-out;
+}
+#nav .nav-bar .nav-list ul a:hover
+{
+    background-color: var(--blue);
+}
+
+#nav .nav-bar .nav-list ul li:last-child a
+{
+    border-top: none;
+    background-color: var(--blue);
+}
+
+#nav .nav-bar .nav-list ul li:last-child a:hover
+{
+    background-color: var(--white);
+    color: #000;
+}
+
+#nav .nav-bar .nav-list .hamburger
+{
+    position: relative;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    border: 4px solid var(--white);
+    border-radius: 50px;
+    cursor: pointer;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav .nav-bar .nav-list .hamburger .bar
+{
+    width: 60%;
+    height: 4px;
+    background-color: var(--white);
+    position: relative;
+}
+#nav .nav-bar .nav-list .hamburger .bar::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--blue);
+    top: -10px;
+    transition: 0.3s ease-in-out;
+}
+#nav .nav-bar .nav-list .hamburger .bar::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--blue);
+    bottom: -10px;
+    transition: 0.3s ease-in-out;
+}
+
+#nav .nav-bar .nav-list .hamburger.active .bar::before
+{
+    top: 0;
+    background-color: var(--white);
+}
+
+#nav .nav-bar .nav-list .hamburger.active .bar::after
+{
+    bottom: 0;
+    background-color: var(--white);
+}
+
+
+/*
+
+End Navigation Bar
+
+*/
 
 /* 
 
@@ -973,6 +1146,7 @@ Start Contact Section
     color: var(--white);
     letter-spacing: 3px;
     border: 2px solid var(--gradient1);
+    transition: 0.3s ease;
 }
 
 #contact .contact .wrapper .contact-section .form-wrapper form .submit:hover
@@ -999,6 +1173,34 @@ Start Media Query for Tablet
 
     /* 
     
+    Start Nav Tablet 
+    
+    */
+
+    #nav .nav-bar .logo
+    {
+        font-size: 2rem;
+    }
+
+    #nav .nav-bar .nav-list ul a
+    {
+        font-size: 3rem;
+    }
+
+    #nav .nav-bar .nav-list .hamburger
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* 
+    
+    End Nav Tablet 
+    
+    */
+
+    /* 
+    
     Start Header Section Tablet 
     
     */
@@ -1006,7 +1208,7 @@ Start Media Query for Tablet
     #header .header
     {
         background-position: -10px 150px, center;
-        padding-top: 200px;
+        padding-top: 140px;
         background-size: 1200px 900px, auto;
     }
 
@@ -1332,6 +1534,57 @@ Start Media Query for Desktop
 
 @media only screen and (min-width: 1200px)
 {
+
+    /* 
+    
+    Start Nav Desktop
+    
+    */
+
+    #nav .nav
+    {
+        height: 15vh;
+    }
+
+    #nav .nav-bar .logo
+    {
+        margin-left: 30px;
+    }
+    
+    #nav .nav-bar .nav-list ul
+    {
+        position: initial;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: hidden;
+        background-color: transparent;
+        margin-right: 40px;
+        column-gap: 5px;
+    }
+
+    #nav .nav-bar .nav-list ul a
+    {
+        display: block;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 15px 20px;
+        border-top: none;
+        border-radius: 20px;
+    }
+
+    #nav .nav-bar .nav-list .hamburger
+    {
+        display: none;
+    }
+
+    /* 
+    
+    End Nav Desktop
+    
+    */
 
     /* 
     
@@ -1725,6 +1978,31 @@ Start Media Query for Desktop
     
     End Testimonials Desktop 
     
+    */
+
+    /*
+
+    Start Contact Section Desktop
+
+    */
+
+    #contact .contact
+    {
+        background-position: 0 100px;
+        background-size: cover;
+    }
+
+    #contact .contact .wrapper
+    {
+        margin-top: 200px;
+        margin-bottom: 150px;
+        width: 50%;
+    }
+
+    /*
+
+    End Contact Section Desktop
+
     */
 
 }
