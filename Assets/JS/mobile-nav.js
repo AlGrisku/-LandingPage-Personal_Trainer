@@ -14,7 +14,7 @@ document.addEventListener('scroll', ()=>{
     if(scroll_position > 100)
     {
         nav.style.backgroundColor = "var(--gradient2)";
-        nav.style.height = '10vh';
+        nav.style.height = '8vh';
     } else
     {
         nav.style.backgroundColor = "transparent";
