@@ -1069,7 +1069,6 @@ Start Footer
     font-size: 1rem;
     position: relative;
 }
-
 #footer .wrapper p::before
 {
     content: '';
@@ -1132,7 +1131,7 @@ Start Media Query for Tablet
     #header .header
     {
         background-position: -10px 150px, center;
-        padding-top: 140px;
+        padding-top: 200px;
         background-size: 1200px 900px, auto;
     }
 
@@ -1402,6 +1401,55 @@ Start Media Query for Tablet
     /*
     
     End Contact Section Tablet
+    
+    */
+
+    /*
+    
+    Start Footer Tablet
+    
+    */
+
+    #footer .wrapper .footer-info-container
+    {
+        row-gap: 50px;
+    }
+
+    #footer .wrapper .footer-info-container .img-wrapper
+    {
+        width: 300px;
+    }
+
+    #footer .wrapper .footer-info-container ul
+    {
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    #footer .wrapper .footer-info-container ul li a
+    {
+        font-size: 1.7rem;
+    }
+
+    #footer .wrapper .footer-info-container .sm-icons .icon
+    {
+        width: 80px;
+    }
+
+    #footer .wrapper p
+    {
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+    }
+    #footer .wrapper p::before
+    {
+        left: 0;
+    }
+
+    /*
+    
+    End Footer Tablet
     
     */
 
