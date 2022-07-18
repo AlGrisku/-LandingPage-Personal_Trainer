@@ -167,7 +167,7 @@ Start Navigation Bar
     justify-content: center;
     z-index: 1;
     overflow-x: hidden;
-    transition: 1s ease left;
+    transition: 0.2s ease left;
 }
 
 #nav .nav-bar .nav-list ul.active
