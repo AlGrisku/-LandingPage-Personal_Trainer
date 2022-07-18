@@ -275,7 +275,7 @@ Start Header Section
 
 #header .header
 {
-    background-image: url('/Assets/Media/Images/Pattern-Desktop.png') ,linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
+    background-image: url('./Assets/Media/Images/Pattern-Desktop.png') ,linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
     background-repeat: no-repeat, no-repeat;
     background-position: -80px 50px, center;
     background-size: 1000px 800px, auto;
