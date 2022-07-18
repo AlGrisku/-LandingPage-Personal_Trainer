@@ -980,6 +980,112 @@ End Contact Section
 
 */
 
+/*
+
+Start Footer
+
+*/
+
+#footer .footer
+{
+    background-color: var(--gray);
+}
+
+#footer .wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#footer .wrapper .footer-info-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 30px;
+}
+
+#footer .wrapper .footer-info-container .img-wrapper
+{
+    width: 250px;
+    height: auto;
+}
+
+#footer .wrapper .footer-info-container ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    width: 100%;
+}
+
+#footer .wrapper .footer-info-container ul li a
+{
+    display: block;
+    font-size: 1.5rem;
+    color: #000;
+    position: relative;
+}
+#footer .wrapper .footer-info-container ul li a::after
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--blue);
+    transition: 0.3s ease-in;
+}
+
+#footer .wrapper .footer-info-container ul li:hover a::after
+{
+    width: 0;
+}
+
+#footer .wrapper .footer-info-container .sm-icons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 50px;
+}
+
+#footer .wrapper p
+{
+    margin: 100px 0 30px 0;
+    color: #C3C3C3;
+    font-weight: 900;
+    font-size: 1rem;
+    position: relative;
+}
+
+#footer .wrapper p::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #C3C3C3;
+    top: -50px;
+}
+
+/*
+
+End Footer
+
+*/
+
 /* 
 
 Start Media Query for Tablet 
