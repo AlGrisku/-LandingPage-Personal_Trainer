@@ -11,14 +11,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="/Assets/Media/Images/BussIcon.png">
 
+    <!--
+        This is the little icon that will be displayed in the tab bar, it is recommended to put your logo or something business-related
+
+        How to change it?
+
+        1. Add your PNG Logo to the file 'Media > Images > Change'
+        2. Come back here
+        3. Within the path (/Assets/Media/Images/Change/BussIcon.png) displayed below this comment, the only thing you have to change is the name of the image from
+        'BussIcon.png' to 'The name of the image file.png'
+        
+        WARNING: if your image is not a PNG but a JPG/JPEG, then you also have to change the file name from '.png' to the file that you are using.
+        Exmaple: '.jpg'
+    -->
+    <link rel="icon" href="/Assets/Media/Images/Change/BussIcon.png">
+
+
+    <!--
+        Change the title to the name of your business, it will be displayed on the tab (all the way to the top in the tab bar)
+    -->
     <title>Astro</title>
 </head>
 
 <body>
 
-    <!-- Start Navigation Bar-->
+    <!-- #Start Navigation Bar# -->
 
     <nav id="nav">
         <div class="nav container">
@@ -26,11 +44,28 @@
             <div class="nav-bar">
 
                 <div class="logo">
-                    <h1>
+
+                    <div class="img-wrapper">
                         <a href="#header">
-                            <span>A</span>str<span>o</span>
+
+                            <!--
+                                Change the logo in the navigation bar
+
+                                How to change it?
+
+                                    1. Add your PNG Logo to the file 'Media > Images > Change'
+                                    2. Come back here
+                                    3. Within the path (/Assets/Media/Images/Change/Business Icon.png) displayed below this comment, the only thing you have to change is the name of the image from
+                                    'Business Icon.png' to 'The name of the image file.png'
+        
+                                    WARNING: if your image is not a PNG but a JPG/JPEG, then you also have to change the file name from '.png' to the file that you are using.
+                                    Exmaple: '.jpg'
+                            -->
+                            <img src="./Assets/Media/Images/Change/Business Icon-White.png" alt="">
+
                         </a>
-                    </h1>
+                    </div>
+
                 </div>
 
                 <div class="nav-list">
@@ -70,9 +105,9 @@
 
     <script src="./Assets/JS/mobile-nav.js"></script>
 
-    <!-- End Navigation Bar -->
+    <!-- #End Navigation Bar# -->
 
-    <!-- Start Header -->
+    <!-- #Start Header# -->
 
     <header id="header">
         <div class="container header">
@@ -82,22 +117,23 @@
 
                     <div class="content-wrapper">
 
+                        <!-- You can change this text for one of yours-->
                         <h1>Personal Trainer</h1>
 
                         <div class="dividers">
                             <span></span>
                         </div>
 
+                        <!-- You can change this text for one of yours-->
                         <p>Want to get that sommer body you always dreamed of?</p>
-
 
                         <div class="email-form">
 
-                            <form action="#">
+                            <form action="./Assets/Mail/email-form.php" method="POST">
                                 <input type="email" id="email" name="email" placeholder="Your Email" required>
-                            </form>
 
-                            <button class="submit">Get started</button>
+                                <button type="submit" class="submit">Get started</button>
+                            </form>
 
                         </div>
 
@@ -108,7 +144,21 @@
                 <div class="right-column">
 
                     <div class="image-container">
-                        <img src="./Assets/Media/Images/Header-pic.jpg" alt="">
+                        
+                        <!--
+                            Change the header image
+
+                            How to change it?
+
+                            1. Add your Image to the file 'Media > Images > Change'
+                            2. Come back here
+                            3. Within the path (/Assets/Media/Images/Change/Header Pic.jpg) displayed below this comment, the only thing you have to change is the name of the image from
+                            'Header Pic.jpg' to 'The name of the image file.jpg'
+        
+                            WARNING: if your image is not a JPG/JPEG but a PNG, then you also have to change the file name from '.jpg' to the file that you are using.
+                            Exmaple: '.png'
+                        -->
+                        <img src="./Assets/Media/Images/Change/Header-pic.jpg" alt="">
                     </div>
 
                 </div>
@@ -121,9 +171,9 @@
         </div>
     </header>
 
-    <!-- End Header -->
+    <!-- #End Header# -->
 
-    <!-- Start About Section -->
+    <!-- #Start About Section# -->
 
     <section id="about">
         <div class="container about">
@@ -135,11 +185,18 @@
             <div class="content-wrapper">
                 <div class="about-content">
 
-                    <h3>Your Name</h3>
+                    <!--
+                        Change 'Your Name' to your actual name both in:
+
+                        1. After 'data-after' enter your name within the brackets ""
+                        2. Where 'Your Name' is in white between the <h3> </h3> tags
+                    -->
+                    <h3 data-after="Your Name">Your Name</h3>
 
                     <div class="about-text">
 
                         <p>
+                            <!-- You can change this text for one of yours-->
                             <b>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Duis vitae risus eros. Vestibulum mattis elementum faucibus. 
@@ -147,6 +204,7 @@
                             </b>
                         </p>
 
+                        <!-- You can change this text for one of yours-->
                         <p>
                             Nulla facilisi. Quisque auctor finibus laoreet. Nullam sagittis 
                             porta eleifend. Aliquam commodo ornare magna, eget molestie dui. 
@@ -158,20 +216,41 @@
 
                     <div class="image-collage">
 
+                        <!--
+                            Change all 4 images from the 'About Section'. Display your own portfolio images!
+
+                            How to change them?
+
+                            1. Add your image to the file 'Media > Images > Change'
+                            2. Come back here
+                            3. Within the paths (/Assets/Media/Images/Change/About-1.jpg) displayed below this comment, the only thing you have to change is the name of the image from
+                            'About-1.jpg' to 'The name of the image file.jpg'
+        
+                            WARNING: if your image is not a JPG/JPEG but a PNG, then you also have to change the file name from '.jpg' to the file that you are using.
+                            Exmaple: '.png'
+                        -->
                         <div class="container-image">
-                            <img src="./Assets/Media/Images/About-1.jpg" alt="">
+
+                            <!-- Change Image 1 -->
+                            <img src="./Assets/Media/Images/Change/About-1.jpg" alt="">
                         </div>
 
                         <div class="container-image">
-                            <img src="./Assets/Media/Images/About-2.jpg" alt="">
+
+                            <!-- Change Image 2 -->
+                            <img src="./Assets/Media/Images/Change/About-2.jpg" alt="">
                         </div>
 
                         <div class="container-image">
-                            <img src="./Assets/Media/Images/About-3.jpg" alt="">
+
+                            <!-- Change Image 3 -->
+                            <img src="./Assets/Media/Images/Change/About-3.jpg" alt="">
                         </div>
 
                         <div class="container-image">
-                            <img src="./Assets/Media/Images/About-4.jpg" alt="">
+
+                            <!-- Change Image 4 -->
+                            <img src="./Assets/Media/Images/Change/About-4.jpg" alt="">
                         </div>
 
                     </div>
@@ -180,19 +259,19 @@
             </div>
 
             <div class="deco1">
-                <img src="./Assets/Media/Images/About-Deco.png" alt="">
+                <img src="./Assets/Media/Images/Dont Change/About-Deco.png" alt="">
             </div>
 
             <div class="deco2">
-                <img src="./Assets/Media/Images/About-Deco.png" alt="">
+                <img src="./Assets/Media/Images/Dont Change/About-Deco.png" alt="">
             </div>
 
         </div>
     </section>
 
-    <!-- End About Section -->
+    <!-- #End About Section# -->
 
-    <!-- Start Services Section -->
+    <!-- #Start Services Section# -->
 
     <section id="services">
         <div class="container services">
@@ -214,10 +293,12 @@
                             <img src="./Assets/Media/Icons/Service 1.png" alt="">
                         </div>
 
+                        <!-- You can change this text for one of yours-->
                         <h3>
                             Get-to-know
                         </h3>
 
+                        <!-- You can change this text for one of yours-->
                         <p>
                             Duis vitae risus eros. Vestibulum mattis elementum faucibus.
                         </p>
@@ -230,10 +311,12 @@
                             <img src="./Assets/Media/Icons/Service 2.png" alt="">
                         </div>
 
+                        <!-- You can change this text for one of yours-->
                         <h3>
                             Training Plan
                         </h3>
 
+                        <!-- You can change this text for one of yours-->
                         <p>
                             Integer vel feugiat nunc. Vivamus sed rhoncus nisl, sit amet vehicula
                         </p>
@@ -246,10 +329,12 @@
                             <img src="./Assets/Media/Icons/Service 3.png" alt="">
                         </div>
 
+                        <!-- You can change this text for one of yours-->
                         <h3>
                             Tracking
                         </h3>
 
+                        <!-- You can change this text for one of yours-->
                         <p>
                             Praesent commodo libero libero, vitae semper ligula placerat eu.
                         </p>
@@ -262,9 +347,9 @@
         </div>
     </section>
 
-    <!-- End Services Section -->
+    <!-- #End Services Section# -->
 
-    <!-- Start Prices Section -->
+    <!-- #Start Prices Section# -->
 
     <section id="prices">
         <div class="container prices">
@@ -280,17 +365,22 @@
 
                         <div class="text-content">
 
+                            <!-- You can change this text for one of yours-->
                             <h3>Starter</h3>
 
+                            <!-- You can change this text for one of yours-->
                             <p>
                                 Phasellus ac neque dolor. Aenean a aliquam libero, et faucibus turpis.
                             </p>
     
                             <ul>
+
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
     
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
@@ -298,6 +388,9 @@
 
                         </div>
 
+                        <!--
+                        Replace the '#' for the link, where your customers should be redirected to
+                       --> 
                         <a href="#" class="cta"> Sign up</a>
 
                     </div>
@@ -306,21 +399,27 @@
 
                         <div class="text-content">
 
+                            <!-- You can change this text for one of yours-->
                             <h3>Advanced</h3>
 
+                            <!-- You can change this text for one of yours-->
                             <p>
                                 Phasellus ac neque dolor. Aenean a aliquam libero, et faucibus turpis.
                             </p>
     
                             <ul>
+
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
     
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
 
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
@@ -328,6 +427,9 @@
 
                         </div>
 
+                       <!--
+                        Replace the '#' for the link, where your customers should be redirected to
+                       --> 
                         <a href="#" class="cta"> Sign up</a>
 
                     </div>
@@ -336,25 +438,32 @@
 
                         <div class="text-content">
 
+                            <!-- You can change this text for one of yours-->
                             <h3>Pro</h3>
 
+                            <!-- You can change this text for one of yours-->
                             <p>
                                 Phasellus ac neque dolor. Aenean a aliquam libero, et faucibus turpis.
                             </p>
     
                             <ul>
+
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
     
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
 
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
 
+                                <!-- You can change this text for one of yours-->
                                 <li>
                                     Vivamus tempor
                                 </li>
@@ -362,6 +471,9 @@
 
                         </div>
 
+                        <!--
+                        Replace the '#' for the link, where your customers should be redirected to
+                       --> 
                         <a href="#" class="cta"> Sign up</a>
 
                     </div>
@@ -372,9 +484,9 @@
         </div>
     </section>
 
-    <!-- End Prices Section --> 
+    <!-- #End Prices Section# --> 
 
-   <!-- Start Contact Section -->
+   <!-- #Start Contact Section# -->
 
    <section id="contact">
         <div class="container contact">
@@ -388,10 +500,12 @@
 
                     <div class="text-info">
 
+                        <!-- You can change this text for one of yours-->
                         <h1>
                             Join now!
                         </h1>
 
+                        <!-- You can change this text for one of yours-->
                         <p>
                             Quisque finibus enim sit amet ante egestas, 
                             sit amet aliquam dui lacinia.
@@ -400,13 +514,15 @@
                     </div>
 
                     <div class="form-wrapper">
-                        <form action="">
+                        <form action="./Assets/Mail/contact-form.php" method="POST">
 
-                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
 
-                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
 
-                            <button class="submit">Submit</button>
+                            <textarea id="message" name="message" rows="10" cols="5" placeholder="Your Message" required></textarea>
+
+                            <button type="submit" class="submit">Submit</button>
 
                         </form>
                     </div>
@@ -417,9 +533,9 @@
         </div>
    </section>
 
-   <!-- End Contact Section -->
+   <!-- #End Contact Section# -->
 
-   <!-- Start Footer -->
+   <!-- #Start Footer# -->
    
    <footer id="footer">
         <div class="container footer">
@@ -430,7 +546,20 @@
 
                     <div class="img-wrapper">
                         <a href="#header">
-                            <img src="./Assets/Media/Images/Business Icon.png" alt="">
+                            <!--
+                                Change the logo in the footer
+
+                                How to change it?
+
+                                1. Add your PNG Logo to the file 'Media > Images > Change'
+                                2. Come back here
+                                3. Within the path (/Assets/Media/Images/Change/Business Icon.png) displayed below this comment, the only thing you have to change is the name of the image from
+                                'Business Icon.png' to 'The name of the image file.png'
+        
+                                WARNING: if your image is not a PNG but a JPG/JPEG, then you also have to change the file name from '.png' to the file that you are using.
+                                Exmaple: '.jpg'
+                            -->
+                            <img src="./Assets/Media/Images/Change/Business Icon.png" alt="">
                         </a>
                     </div>
 
@@ -459,18 +588,42 @@
                     <div class="sm-icons">
 
                         <div class="icon">
+
+                            <!--
+                                Add your Instagram Link!
+
+                                1. Delete the hashtag '#'
+                                2. Copy the link to your Instagram
+                                3. Paste it between the brackets "" after 'href'
+                            -->
                             <a href="#">
                                 <img src="./Assets/Media/Icons/Insta Icon.png" alt="">
                             </a>
                         </div>
 
                         <div class="icon">
+
+                            <!--
+                                Add your Twitter Link!
+
+                                1. Delete the hashtag '#'
+                                2. Copy the link to your Twitter
+                                3. Paste it between the brackets "" after 'href'
+                            -->
                             <a href="#">
                                 <img src="./Assets/Media/Icons/Twitter Icon.png" alt="">
                             </a>
                         </div>
 
                         <div class="icon">
+
+                            <!--
+                                Add your TikTok Link!
+
+                                1. Delete the hashtag '#'
+                                2. Copy the link to your TikTok
+                                3. Paste it between the brackets "" after 'href'
+                            -->
                             <a href="#">
                                 <img src="./Assets/Media/Icons/TikTok Icon.png" alt="">
                             </a>
@@ -480,6 +633,11 @@
 
                 </div>
 
+                <!-- 
+                    You can change this text for one of yours
+
+                    FYI: The '&copy;' is just displaying the copyright symbol on the page
+                -->
                 <p>2022 Copyright &copy; Your Business</p>
 
             </div>
@@ -487,7 +645,7 @@
         </div>
    </footer>
    
-   <!-- End Footer --> 
+   <!-- #End Footer# --> 
     
 </body>
 

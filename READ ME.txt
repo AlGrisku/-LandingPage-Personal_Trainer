@@ -1,0 +1,61 @@
+
+    READ ME
+
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    First of all, thank you for purchasing this template!
+
+    In the following I will explain what content can be changed and how AND which can not be changed.
+
+    I will explain it as easy and simple as possible for you!
+
+   ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   > WHAT SHOULD NOT BE CHANGED? <
+    
+    1. In the folder 'Assets' these 2 folders must not be changed(unless you have coding experience):
+        - CSS
+        - JS
+    
+    2. In the 'index.html' file, the content that CAN be changed is marked with an instruction comment,
+    otherwise you don`t have to change or delete anything
+
+    3. Within the 'Media' folder located also in 'Assets', there are other 3 different folders:
+        - Icons
+        - Images
+        - Vectors
+    
+    Vectors and Icons must not be changed
+
+    4. Within the 'Images' folder there are 2 other folders
+        - Change
+        - Dont Change -> Self explanatory
+
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   > WHAT CAN BE CHANGED AND HOW TO IDENTIFY IT? <
+
+    1. First of all, every section from the website (Home = Header, About, Services, Contact) is clearly devided with a '#'
+    at the beginning of a comment, for example: #Start Header Section#
+
+    I did this for you to be able to find every section without a problem
+
+    Also, you can see where a section ends with: '#End Header Section#' for example.
+
+    2. Within this document 'index.html' there will be comments (like this one) that give an exact explanaition on what to change and how
+
+    3. In order to add YOUR images, you just have to save your images under the folder 'Assets > Media > Images > Change'. You
+    can also, if you want, delete the dummy images that I used for the template
+
+    4. In order to get the emails from the contact forms to your email you have to:
+        - Go to the folder "Mail"
+        - Open both files
+        - There is a comment that says where to change the email to your email
+        - Change it
+        - Save it
+
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    I hope that you are happy with your purchase! And if you need anything please send me an email or a message!
+
+    Have a wonderful day and THE BEST OF LUCK

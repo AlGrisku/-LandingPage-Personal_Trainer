@@ -128,28 +128,14 @@ Start Navigation Bar
 
 #nav .nav-bar .logo
 {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    margin-left: 10px;
+    width: 35%;
 }
 
-#nav .nav-bar .logo h1 a
+#nav .nav-bar .logo .img-wrapper
 {
-    color: var(--white);
+    width: 200px;
+    height: auto;
     transition: 0.3s ease;
-}
-#nav .nav-bar .logo h1 a span
-{
-    color: var(--blue);
-    transition: 0.3s ease;
-}
-#nav .nav-bar .logo h1 a:hover
-{
-    color: var(--blue);
-}
-#nav .nav-bar .logo h1 a:hover span
-{
-    color: var(--white);
 }
 
 #nav .nav-bar .nav-list ul
@@ -275,7 +261,7 @@ Start Header Section
 
 #header .header
 {
-    background-image: url('/Assets/Media/Images/Pattern-Desktop.png') ,linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
+    background-image: url('/Assets/Media/Images/Dont Change/Pattern-Desktop.png') ,linear-gradient(to bottom right, var(--gradient1), var(--gradient2));
     background-repeat: no-repeat, no-repeat;
     background-position: -80px 50px, center;
     background-size: 1000px 800px, auto;
@@ -379,6 +365,7 @@ Start Header Section
 #header .left-column .content-wrapper .email-form form
 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -521,7 +508,7 @@ Start About Section
 
 #about .content-wrapper .about-content h3::after
 {
-    content: 'Your Name';
+    content: attr(data-after);
     position: absolute;
     left: 35%;
     top: -5px;
@@ -826,7 +813,7 @@ Start Contact Section
 {
     background-color: var(--gradient1);
     position: relative;
-    background-image: url('/Assets/Media/Images/Pattern-Desktop.png');
+    background-image: url('/Assets/Media/Images/Dont Change/Pattern-Desktop.png');
     background-repeat: no-repeat;
     background-position: -80px 50px;
     background-size: 1000px 800px;
@@ -946,8 +933,20 @@ Start Contact Section
     border-color: transparent;
 }
 
+#contact .contact .wrapper .contact-section .form-wrapper form textarea
+{
+    width: 100%;
+    border-radius: 35px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    border-color: transparent;
+}
+
 #contact .contact .wrapper .contact-section .form-wrapper form input[type=text]:focus,
-#contact .contact .wrapper .contact-section .form-wrapper form input[type=email]:focus
+#contact .contact .wrapper .contact-section .form-wrapper form input[type=email]:focus,
+#contact .contact .wrapper .contact-section .form-wrapper form textarea:focus
 {
     outline-color: var(--blue);
 }
@@ -1102,7 +1101,7 @@ Start Media Query for Tablet
 
     #nav .nav-bar .logo
     {
-        font-size: 2rem;
+        width: 20%;
     }
 
     #nav .nav-bar .nav-list ul a
@@ -1393,6 +1392,11 @@ Start Media Query for Tablet
         font-size: 1.4rem;
     }
 
+    #contact .contact .wrapper .contact-section .form-wrapper form textarea
+    {
+        font-size: 1.4rem;
+    }
+
     #contact .contact .wrapper .contact-section .form-wrapper form .submit
     {
         font-size: 2rem;
@@ -1485,6 +1489,7 @@ Start Media Query for Desktop
     #nav .nav-bar .logo
     {
         margin-left: 30px;
+        width: 15%;
     }
     
     #nav .nav-bar .nav-list ul
@@ -1593,7 +1598,8 @@ Start Media Query for Desktop
     
     #header .left-column .content-wrapper .email-form form
     {
-        width: 70%;
+        width: 100%;
+        flex-direction: row;
     }
 
     #header .left-column .content-wrapper .email-form input[type=email]
@@ -1601,6 +1607,7 @@ Start Media Query for Desktop
         text-align: left;
         padding-left: 20px;
         font-size: 1.3rem;
+        width: 70%;
     }
 
     #header .left-column .content-wrapper .email-form .submit
