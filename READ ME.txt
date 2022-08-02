@@ -14,7 +14,7 @@
    > WHAT SHOULD NOT BE CHANGED? <
     
     1. In the folder 'Assets' these 2 folders must not be changed(unless you have coding experience):
-        - CSS
+        - CSS (Only colors can be changed, instructions in "What can be changed?")
         - JS
     
     2. In the 'index.html' file, the content that CAN be changed is marked with an instruction comment,
@@ -53,6 +53,25 @@
         - There is a comment that says where to change the email to your email
         - Change it
         - Save it
+
+    5. In order to change the colour palette from the website, please follow this steps:
+        - Open the file 'stylsheet.css' located in: Assets > CSS
+        - At the beginning of the file you will see a ':root' command
+        - Inside this command you will be able to find 5 different colors:
+            --gradient1: #474554;
+            --gradient2: #817F8A;
+            --gray: #F1F1F1;
+            --white: #FFFFFF;
+            --blue: #65FBD2;
+        
+        - If you have your colour palette, change the color code to yours
+        - If you want to change the name of the color variable, for example from: '--blue'
+        you have to just replace the word and leave the '--'.
+        EXAMPLE:
+
+        Before -> '--blue: #65FBD2;' | After -> '--red: #f72500;'
+
+        - There will be comments indicating in which sections the colors are being used
 
     ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 

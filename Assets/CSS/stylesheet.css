@@ -6,10 +6,51 @@ Start Color Variables
 
 :root
 {
+    /*
+        --gradient1 is used:
+        > Background color in Header Section combined with '--gradient2'
+        > Background color for mobile navigation menu
+        > Contact Section background color
+    */
     --gradient1: #474554;
+
+    /*
+         --gradient2 is used:
+         > Background color in Header Section combined with '--gradient1'
+         > About Section: Where 'Your Name' is displayed at the background
+    */
     --gradient2: #817F8A;
+
+    /*
+        --gray is used:
+        > About Section background color
+        > Prices Section background color
+        > Footer Section background color
+    */
     --gray: #F1F1F1;
+
+    /*
+        --white is used:
+        > Text color from button
+        > Border color from button
+        > Background color from button on hover
+        > Mobile Menu for hamburger border and both lines up and down
+        > Header Section: Text color
+        > Services and Price Section: Background color for content columns
+        > Contact Section: Text color
+    */
     --white: #FFFFFF;
+
+    /*
+        --blue:
+        - Navigation: Background color on hover
+        - Header Section: Img decoration color, divider under title, button background color from form
+        - About Section: Underline color from section name
+        - Services Section: Underline color from section name
+        - Prices Section: Border lines from content columns, button background color
+        - Contact Section: Underlines, button background color from form
+        - Footer: Links underline color
+    */
     --blue: #65FBD2;
 }
 
